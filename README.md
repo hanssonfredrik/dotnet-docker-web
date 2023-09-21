@@ -3,7 +3,7 @@
 
 This sample demonstrates how to use .NET Framework and Docker together.
 
-This sample requires the [Docker client](https://www.docker.com/products/docker-desktop/).
+This sample requires the [Docker client](https://www.docker.com/products/docker-desktop/) and [.NET Framework](https://dotnet.microsoft.com/en-us/download).
 
 ## Build and run the sample with dotnet
 
