@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+    - 80:80
+    tty: true
+    volumes:
+    - .:/app:rw
+version: '2.3'
