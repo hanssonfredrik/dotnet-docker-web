@@ -28,5 +28,5 @@ docker run -dp 8000:80 --name dotnet-docker-web-container dotnet-docker-web:late
 You can build and run the sample in Divio on your computer using the following commands. The instructions assume that you are in the root of the repository and that you have installed [Divio CLI](https://docs.divio.com/introduction/01-installation/).
 
 ```console
-docker app start
+divio app up
 ```
