@@ -11,6 +11,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0 as runtime
 WORKDIR /publish
 COPY --from=build-env /publish .
 
+# ENV DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE=false
 # Divio
 # --------------------
 ENV PORT=80
