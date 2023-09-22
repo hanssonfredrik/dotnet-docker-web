@@ -11,14 +11,14 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0 as runtime
 WORKDIR /publish
 COPY --from=build-env /publish .
 
-# ENV DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE=false
+ENV DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE=false
 # Divio
 # --------------------
-# ENV PORT=80
-# ENV HOST=0.0.0.0
-# ENV BROWSER='none'
+ENV PORT=80
+ENV HOST=0.0.0.0
+ENV BROWSER='none'
 
-# EXPOSE 80
+EXPOSE 80
 
 # Azure Container Apps
 # --------------------
