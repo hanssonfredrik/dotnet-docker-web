@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 
 namespace dotnet_docker_web.Pages;
 
@@ -14,6 +15,6 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-
+        ViewData.Add("EnvironmentVariable", Environment.GetEnvironmentVariable("ENV_TEST"));
     }
 }
