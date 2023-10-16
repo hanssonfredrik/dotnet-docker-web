@@ -15,6 +15,6 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        ViewData.Add("EnvironmentVariable", Environment.GetEnvironmentVariable("ENV_TEST"));
+        ViewData.Add("EnvironmentVariable", Environment.GetEnvironmentVariable("ENV_TEST") + "test");
     }
 }
